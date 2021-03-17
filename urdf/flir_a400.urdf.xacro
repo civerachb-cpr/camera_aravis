@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:macro name="flir_a400" params="prefix parent_link *origin">
+    <link name="${prefix}_base_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://camera_aravis/meshes/flir_a400.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+        <material name="black">
+          <color rgba="0 0 0 1" />
+        </material>
+        <origin xyz="0 0 0" rpy="1.5707963267948966 0 1.5707963267948966" />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://camera_aravis/meshes/flir_a400.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+        <origin xyz="0 0 0" rpy="1.5707963267948966 0 1.5707963267948966" />
+      </collision>
+    </link>
+
+    <joint name="${prefix}_base_link_joint" type="fixed">
+      <parent link="${parent_link}" />
+      <child link="${prefix}_base_link" />
+      <xacro:insert_block name="origin" />
+    </joint>
+  </xacro:macro>
+</robot>
