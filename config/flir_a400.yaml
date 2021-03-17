@@ -1,0 +1,10 @@
+# Run
+#   arv-tool-0.8 features
+# for a complete list of parameters
+ImageFormatControl:
+  ImageMode: thermal
+  PixelFormat: Mono16
+  ImageCompressionMode: Off
+
+ImageStreamControl:
+  IRFormat: TemperatureLinear10mK

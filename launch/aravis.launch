@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-  <node name="aravis" pkg="camera_aravis" type="camnode">
+  <arg name="name" default="aravis" />
+  <arg name="camera_params" default="$(find camera_aravis)/config/flir_a400.yaml" />
+
+  <node name="$(arg name)" pkg="camera_aravis" type="camnode">
+    <rosparam command="load" file="$(arg camera_params)" />
   </node>
 </launch>
