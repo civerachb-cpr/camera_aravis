@@ -25,8 +25,4 @@
       <xacro:insert_block name="origin" />
     </joint>
   </xacro:macro>
-
-  <xacro:flir_a400 prefix="a400" parent_link="front_mount">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </xacro:flir_a400>
 </robot>
