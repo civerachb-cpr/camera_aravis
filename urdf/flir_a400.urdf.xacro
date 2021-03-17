@@ -9,13 +9,13 @@
         <material name="black">
           <color rgba="0 0 0 1" />
         </material>
-        <origin xyz="0 0 0" rpy="1.5707963267948966 0 1.5707963267948966" />
+        <origin xyz="0 0 0.038 " rpy="1.5707963267948966 0 1.5707963267948966" />
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://camera_aravis/meshes/flir_a400.stl" scale="0.001 0.001 0.001" />
         </geometry>
-        <origin xyz="0 0 0" rpy="1.5707963267948966 0 1.5707963267948966" />
+        <origin xyz="0 0 0.038" rpy="1.5707963267948966 0 1.5707963267948966" />
       </collision>
     </link>
 
@@ -25,4 +25,8 @@
       <xacro:insert_block name="origin" />
     </joint>
   </xacro:macro>
+
+  <xacro:flir_a400 prefix="a400" parent_link="front_mount">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:flir_a400>
 </robot>
