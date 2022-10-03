@@ -1,0 +1,20 @@
+<package>
+  <name>camera_aravis_description</name>
+  <version>2.0.0</version>
+  <description>Description files for the camera_aravis package</description>
+
+  <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+
+  <author email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</author>
+  <author email="stevesafarik@gmail.com">Steve Safarik</author>
+  <author email="andrew.straw@imp.ac.at">Andrew Straw</author>
+
+  <license>LGPLv2</license>
+
+  <url type="website">http://github.com/ssafarik/camera_aravis</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>xacro</run_depend>
+
+</package>

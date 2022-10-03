@@ -4,7 +4,7 @@
     <link name="${prefix}_base_link">
       <visual>
         <geometry>
-          <mesh filename="package://camera_aravis/meshes/flir_a400.stl" scale="0.001 0.001 0.001" />
+          <mesh filename="package://camera_aravis_description/meshes/flir_a400.stl" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="black">
           <color rgba="0 0 0 1" />
